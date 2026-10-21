@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-bg: 250 248 245;        /* #FAF8F5 warm off-white */
+  --c-surface: 255 255 255;   /* #FFFFFF */
+  --c-surface-2: 243 240 235; /* #F3F0EB */
+  --c-border: 226 221 214;    /* #E2DDD6 */
+  --c-content: 33 31 28;      /* #211F1C */
+  --c-muted: 118 112 104;     /* #767068 */
+  --c-primary: 47 74 62;      /* #2F4A3E forest green */
+  --c-primary-fg: 255 255 255;
+  --c-accent: 196 120 74;     /* #C4784A terracotta */
+}
+.dark {
+  --c-bg: 20 19 18;           /* #141312 */
+  --c-surface: 30 28 26;      /* #1E1C1A */
+  --c-surface-2: 40 37 34;    /* #282522 */
+  --c-border: 58 54 50;       /* #3A3632 */
+  --c-content: 240 236 230;   /* #F0ECE6 */
+  --c-muted: 150 143 134;     /* #968F86 */
+  --c-primary: 126 170 146;   /* #7EAA92 */
+  --c-primary-fg: 20 19 18;
+  --c-accent: 222 150 106;    /* #DE966A */
+}
+
+@layer base {
+  body { @apply bg-bg text-content font-sans antialiased; }
+}
+
+@layer components {
+  .card { @apply rounded-xl border border-border bg-surface p-6; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-widest text-accent; }
+}
