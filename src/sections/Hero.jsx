@@ -6,7 +6,7 @@ export function Hero() {
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
       <div>
         <p className="eyebrow">Autumn collection</p>
-        <h1 className="mt-4 text-4xl font-bold text-content">Homeware made to last a lifetime</h1>
+        <h1 className="mt-4 text-6xl font-bold text-content">Homeware made to last a lifetime</h1>
         <p className="mt-4 text-lg text-gray-500">Simple, honest pieces for the rooms you live in. Designed in Copenhagen, made by small workshops across Europe.</p>
         <div className="mt-7 flex items-center gap-3">
           <Button size="lg">Shop the collection <ArrowRight className="h-4 w-4" /></Button>
